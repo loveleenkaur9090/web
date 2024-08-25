@@ -50,8 +50,13 @@ ul li a{
  }
  .language select:hover{
     color:black;
- } 
-.cta img{
+ }
+ 
+ 
+
+
+ 
+/* .cta img{
    height: 100%;
    width: 100%;
    padding:0px 30px 0px 30px ;
@@ -180,7 +185,7 @@ ul li a{
     text-align: center;
     padding-top: 30px;
     font-size: 45px;
-}
+} */
 .sectionfifthcontainer{
     background-color: black;
     color: white;
