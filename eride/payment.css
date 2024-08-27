@@ -10,29 +10,30 @@
     display:flex;
     align-items: center;
     background-color: white;
-    margin: 20px 30px 30px;  
-    /* border: 2px solid rgba(0, 0, 0, 0);
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.406); */
+    margin: 20px 30px 20px;  
 }
-
+#navbar{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
 .logo img {
     height: 37px;
     width: 152px;
 }
 .menu{
-    padding-left: 60px;
+    padding-left: 6px;
 }
 ul li{
     list-style: none;
     float: left;
 }
 ul li a{
-    padding-left: 35px;
+    padding-left: 30px;
 }
 .menu li a{
     text-decoration: none;
     color: #1BBE2C;
     font-weight: 500;
+    font-size: 12px;
 }
 .menu a:hover{
     color: black;
@@ -51,7 +52,6 @@ ul li a{
  .language select:hover{
     color:black;
  }
- 
  #section-1{
     margin:80px 75px 30px;
 }
@@ -73,10 +73,8 @@ ul li a{
     width: 25px;
     margin:0px 48% ;
     margin-top: 2px;
-    margin-bottom: 13px;
-    
+    margin-bottom: 13px; 
  }
- 
 
 #section-2{
     margin:0px 75px 30px;
