@@ -52,7 +52,48 @@ ul li a{
     color:black;
  }
  
- 
+ .container{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#form{
+    text-decoration: none;
+}
+/* input[required] + label::after,
+textarea[required] + label::after {
+    content: " *";
+    color: red;
+    margin-left: 5px;
+} */
+.firstcontainer{
+    margin-left: 10px;
+    padding-right: 50px;
+}
+.firstcontainer .btn button{
+    border: 20px;
+    border-radius: 5px;
+    background-color:  #1BBE2C;
+    padding: 15px 45px 15px 45px;
+    color: white;
+    font-weight: light;
+    cursor: pointer;
+}
+
+.secondcontainer p {
+    font-weight: 300;
+    color: rgb(129, 129, 129);
+}
+.secondcontainer p strong{
+    color: rgb(83, 82, 82);
+}
 
 
  
