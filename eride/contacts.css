@@ -51,7 +51,14 @@ ul li a{
  .language select:hover{
     color:black;
  }
- 
+ #facebook img{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    display: flex;
+    background-color: white;
+
+}
  .container{
     display: flex;
     margin-left: 20px;
@@ -64,18 +71,22 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.bodycontainer{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
 #form{
     text-decoration: none;
+    margin-top: 60px;
 }
-/* input[required] + label::after,
-textarea[required] + label::after {
-    content: " *";
-    color: red;
-    margin-left: 5px;
-} */
 .firstcontainer{
-    margin-left: 10px;
-    padding-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.firstcontainer h2{
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 30px;
 }
 .firstcontainer .btn button{
     border: 20px;
@@ -86,147 +97,26 @@ textarea[required] + label::after {
     font-weight: light;
     cursor: pointer;
 }
-
+.secondcontainer {
+    margin-left: 190px;
+}
+.secondcontainer h3{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 30px 50px;
+}
 .secondcontainer p {
-    font-weight: 300;
-    color: rgb(129, 129, 129);
+    margin-top: 20px;
+    font-weight: 310;
+    color: rgb(114, 113, 113);
 }
 .secondcontainer p strong{
-    color: rgb(83, 82, 82);
+    color: rgb(88, 87, 87);
 }
 
 
  
-/* .cta img{
-   height: 100%;
-   width: 100%;
-   padding:0px 30px 0px 30px ;
-}
-.cta a img{
-   height: 10%;
-   width: 17%;
-}
-.cta .overlay{
-    position: fixed;
-    padding: 10px;
-}
-.bestselligscooters{
-    padding-bottom: 40px;
-}
-.bestselligscooters h1{
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 50px;
-}
-.bestselligscooters button{
-    border: 20px;
-    border-radius: 5px;
-    background-color:  #1BBE2C;
-    padding: 15px 45px 15px 45px;
-    color: white;
-    font-weight: light;
-    cursor: pointer;
-}
-.bestselligscooters .btn{
-    text-align: center
-}
-.sectiononecontainer{
-    background-color: #F7F5F3;
-    
-}
-.section1{
-    display: flex;
-    text-align: center;
-    background-color: #F7F5F3;
-    font-weight:200;
-    padding: 40px 40px 20px;
-
-}
-.section1 p{
-    width: 90%;
-    padding-top: 15px;
-}
-.fastdelivery{
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    gap: 50px;
-}
-.easypayment{
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    gap: 20px;
-}
-.section2{
-    font-weight:200;
-    padding-bottom: 30px;
-    display: flex;
-    text-align: center;
-    background-color: #F7F5F3;
-    padding: 40px 40px 40px;
-}
-.safeandreliable{
-    justify-content: space-between;
-    width: 80%;
-    max-width: 800px;
-    gap: 20px;
-}
-.zeroemissions{
-    justify-content: space-between;
-    width: 80%;
-    max-width: 800px;
-    gap: 20px;
-}
-.sedtiontwocontainer{
-    display: flex;
-    padding: 40px 40px 40px;
-
-}
-.firstcoloum{
-    width: 50%;
-}
-.firstcoloum h1{
-    text-align: center;
-    padding-top: 120px;
-    font-size: 45px;
-}
-.firstcoloum h3{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #666666;
-    text-align: center;
-
-}
-.firstcoloum p{
-    text-align: center;
-    font-weight:350;
-    color: grey;
-
-}
-.sectionthirdcontainer{
-    padding: 40px 40px 40px;
-    font-weight:300;
-    display: flex;
-    text-align: center;
-    background-color: #F7F5F3;
-}
-.sectionthirdcontainer h1{
-    margin-left: 20%;
-    color:black;
-}
-.sectionthirdcontainer p{
-    padding: 20px 0px 40px 0px;
-    padding-left: 42px;
-    text-align: center;
-    color: grey;
-}
-.sectionfourthcontainer  h1{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 45px;
-} */
 .sectionfifthcontainer{
     background-color: black;
     color: white;
