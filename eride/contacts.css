@@ -83,8 +83,19 @@ input, textarea {
 }
 .firstcontainer h2{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 45px;
     padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.firstcontainer form{
+    padding-top: 30px;
+
+}
+.firstcontainer label{
+    font-size: 20px;
+    padding-bottom: 5px;
+
 }
 .firstcontainer .btn button{
     border: 20px;
@@ -92,7 +103,8 @@ input, textarea {
     background-color:  #1BBE2C;
     padding: 15px 45px 15px 45px;
     color: white;
-    font-weight: light;
+    font-weight: 400;
+    font-size: 15px;
     cursor: pointer;
 }
 .secondcontainer {
@@ -102,19 +114,22 @@ input, textarea {
     font-weight: 500;
     font-size: 30px;
     text-align: center;
-    margin: 30px 30px 50px;
+    margin: 20px 20px 40px 20px;
+    padding-top: 90px;
 }
 .secondcontainer p {
     margin-top: 20px;
     font-weight: 310;
     color: rgb(114, 113, 113);
+    font-size: 20px;
 }
 .secondcontainer p strong{
     color: rgb(88, 87, 87);
+    font-size: 20px;
 }
 
 
- 
+
 .sectionfifthcontainer{
     background-color: black;
     color: white;

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-ride.lv</title>
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="contacts.css">
+<link rel="stylesheet" href="eshop.css">
 <body>
     <div class="header">
         <div class="logo">
@@ -24,7 +23,31 @@
                 </ul>
             </nav>
         </div>
-       <!-- <div class="atttocart"></div> -->
+    <div class="leftmenu">
+        <div class="shopping-icon"  id="shopping-cart" >
+            <img src="shopping-bag (1).png" alt="" class="cart-icon">
+        </div>
+
+        <div class="cart-popup" id="cart-popup">
+            <div class="cart-content">
+               
+                <div class="atc-product">
+                    <div class="atc-item-image" >
+                     <img src="litego-joyor-1.jpg" alt="">
+                    </div>
+                    <div class="atc-item-details">
+                        <p class="atc-item-title">product.name</p>
+                            <div class="atc-item-price">
+                                <span > <strike style="color: rgba(128, 128, 128, 0.566);">€569</strike>€599</span>
+                            </div>
+                            <button  type="button" id="atc-add-to-cart" class="atc-add">Add to cart</button>
+                        </div>
+                </div>
+                <button id="close-btn">Close</button>
+            </div>
+        </div> 
+        
+        
         <div class="language"> 
             <select name=""  class="fa fa-globe" aria-hidden="true" onchange="changeLanguage()">
                 <option value="en" class="eng">ENG</option>
@@ -32,35 +55,17 @@
                 <option value="rs">RUS</option>
              </select>
         </div>
-    </div>
-   
-   <div class="bodycontainer">
-    <div class="firstcontainer">
-        <h2>If you have any questions- please write here!</h2>
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" name="Name" id="" required> 
-            <label for="email">Email:</label>
-            <input type="email" name="" id="" required>
-             <label for="message">Message:</label>
-             <textarea name="message" id=""></textarea>
-        </form>
-        <div class="btn">
-            <button type="button" >Submit</button>
-        </div>
        </div>
-       <div class="secondcontainer">
-         <h3>Contacts</h3>
-         <p><strong>Legal address:</strong> Matīsa iela 58, Rīga, LV-1009</p>
-         <p><strong>Telephone:</strong>+371 24002304</p>
-         <p><strong>E-mail:</strong>info@e-ride.lv</p>
-         <p><strong>Working time:</strong></p>
-         <p><strong></strong></p>
-        </div>
+    </div>
+    
+    <div class="products">
+
+
    </div>
 
     
-     <div class="sectionfifthcontainer">
+
+    <div class="sectionfifthcontainer">
         <div class="footer">
             <div class="footercolumone">
             <p>E-RIDE.LV</p>
@@ -97,6 +102,7 @@
         </div>
     </div>
 <script src="javascript.js"></script>
+<script src="eshop.js"></script>
 <script src="https://kit.fontawesome.com/ccbff20e5d.js" crossorigin="anonymous"></script>
 </body>
 </html>
