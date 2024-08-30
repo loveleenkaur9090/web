@@ -20,14 +20,14 @@
     width: 152px;
 }
 .menu{
-    padding-left: 60px;
+    padding-left: 160px;
 }
 ul li{
     list-style: none;
     float: left;
 }
 ul li a{
-    padding-left: 35px;
+    padding: 25px;
 }
 .menu li a{
     text-decoration: none;
@@ -37,6 +37,115 @@ ul li a{
 .menu a:hover{
     color: black;
 }
+
+.leftmenu{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f98d;
+    min-width: 160px;
+    box-shadow:0px 8px 16px 0px rgba(0, 0, 0, 0.065);
+    z-index: 1;
+    border: 1px  ;
+    border-radius: 2px ;
+    padding: 5px 5px 5px 5px ;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.shopping-icon img{
+    margin-left: 30px ;
+    cursor:pointer;
+}
+.shopping-icon img:hover{
+    filter: brightness(0);    
+}
+#add-to-cart{
+    border: 1px solid  ;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px ;
+    border-color: #06df1b;
+    background-color: #06df1b;
+    color: white;
+    cursor: pointer;
+}
+#add-to-cart:hover{
+    background-color: green;
+    color: white;   
+}
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+.cart-popup.open {
+    right: 0; 
+}
+.cart-content {
+    padding: 20px;
+}
+.atc-item-image img {
+    height: 90px;
+    width: 100px;
+   text-align: center;
+}
+.atc-product{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+.atc-item-title {
+    font-size: 18px;
+    color: #535353;
+    font-weight: 300;
+}
+.atc-item-price {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.566);
+    margin: 10px 0;
+    
+}
+.atc-add {
+    background-color: #06df1b;
+    padding:10px 20px 10px 20px;
+    border-radius: 5px ;
+    border: 2px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.add-add{
+ background-color: rgb(3, 186, 3);   
+}
+#close-btn {
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid  ;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px ;
+    background-color: #8d8e8d;
+    color: white;
+    text-align: right;
+}
+#close-btn:hover{
+    background-color: rgb(1, 197, 1);
+    color: white;   
+}
+
 .language select{
     color:#1BBE2C;
     cursor: pointer;
