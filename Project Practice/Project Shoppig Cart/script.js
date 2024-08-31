@@ -23,6 +23,7 @@ const addDataToHTML=()=>{
     listProducts.forEach(products => {
       let newProduct =document.createElement('div');
       newProduct.classList.add('item');
+      newProduct.dataset.id = products.id;
       newProduct.innerHTML=`
              <img src="${products.image}" alt="">
              <h2>${products.name}</h2>
@@ -39,25 +40,25 @@ listProductHTML.addEventListener('click',(event) => {
     let positionClick = event.target;
     if(positionClick.classList.contains('addCart')){
         let product_id= positionClick.parentElement.dataset.id;
-    addToCart(product_id);
+        addToCart(product_id);
     }
 })
 
 const addToCart = (product_id) =>{
-    let positionThisProductInCart= carts.findIndex((value)=> value.product_id == product_id);
-    if(carts.length<=0){
+    let positionThisProductInCart= carts.findIndex((value) => value.product_id == product_id);
+    if(carts.length <= 0){
         carts=[{
             product_id:product_id,
             quantity:1
         }]
      } 
     else if(positionThisProductInCart < 0){
-            carts.push[{
+            carts.push({
                 product_id:product_id,
                 quantity:1
-            }]
+            });
     }else{
-        carts[positionThisProductInCart].quantity=carts[positionThisProductInCart].quantity=1;
+        carts[positionThisProductInCart].quantity=carts[positionThisProductInCart].quantity+1;
     }
    addCartToHTML();
    addCartToMemory();
@@ -105,11 +106,34 @@ listCartHTML.addEventListener(('click'),(revent)=>{
    }
    changeQuantity(product_id,type);
    let positionClick=carts.carts.findIndex((value)=>value.product_id=product_id);
+
+
 }
 })
+const changeQuantity=(product_id,type)=>{
+    let positionItemCart =carts.findIndex((value)=>value.product_id=product_id);
+
+    if(positionItemCart>=0){
+      switch(type){
+        case 'plus':
+            carts[positionItemCart].quantity=carts[positionItemCart].quantity=1;
+            break;
+            
+            default :
+            let valueChange=carts[positionItemCart].quantity=1;
+            if(valueChange>0){
+                carts[positionItemCart].quantity=valueChange;
+            }else{
+                carts.splice(positionItemCart,1);
+            }
+            break;
+        }
+    }
+}
+
  const initApp=()=>{
     fetch('products.json')
-    .then(response=> response.json())
+    .then(response => response.json())
     .then(data=>{
         listProducts=data;
         addDataToHTML();
