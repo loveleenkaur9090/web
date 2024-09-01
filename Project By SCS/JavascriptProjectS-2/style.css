@@ -12,11 +12,11 @@
     transform: translate(-50%,-50%);
     border: 2px solid  ;
     border-radius: 50%;
-    background-color: red;
+    background-color: yellow;
     border-right: 20px;
     border-left: 20px;
     border-bottom: 20px;
     border-top: 20px;
     border-style: dotted;
-    box-shadow: 5px 5px 5px 15px lightcoral;
+    box-shadow: 2px 2px  10px 2px ;
 }
