@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#rect{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid  ;
+    border-radius: 50%;
+    background-color: red;
+    border-right: 20px;
+    border-left: 20px;
+    border-bottom: 20px;
+    border-top: 20px;
+    border-style: dotted;
+    box-shadow: 5px 5px 5px 15px lightcoral;
+}
