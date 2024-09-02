@@ -11,6 +11,7 @@
     background-color: white;
     margin: 20px 30px 30px;  
     justify-content: space-between;
+    overflow: hidden;
     
 }
 .logo img {
@@ -331,4 +332,46 @@ ul li a{
 }
 .autor img{
     width: 7%;
+}
+
+
+
+
+.nav-toggle{
+    display: none;
+    color: #1BBE2C;
+}
+
+/* responsive */
+@media screen  and (max-width:991px){
+    .nav-toggle{
+        display: flex;
+        margin-right: 20px;
+    }
+    /* .logo{
+       display: none;
+    } */
+    nav ul li{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
+    .leftmenu{
+        display: none;
+    }
+    .bestselligscooters h1{
+        font-size: 20px;
+    }
+    .btn button{
+       text-align: center;
+       margin-top: 20px;
+       cursor: pointer;
+       border: 1px solid  ;
+       border-radius: 5px;
+       padding: 5px 20px 5px 20px ;
+    }
+    .firstcoloum h1{
+        font-size: 30px;
+    }
 }
