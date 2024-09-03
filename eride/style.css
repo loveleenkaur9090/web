@@ -180,13 +180,14 @@ ul li a{
     padding: 10px;
 }
 .bestselligscooters{
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 .bestselligscooters h1{
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .bestselligscooters button{
     border: 20px;
@@ -198,7 +199,34 @@ ul li a{
     cursor: pointer;
 }
 .bestselligscooters .btn{
-    text-align: center
+    text-align: center;
+}
+.bestsellingscootercart{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100%;
+    margin: 10px;
+}
+.cart-1{
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* border-radius: 10%; */
+    margin: 10px ;
+}
+.cart-1 img{
+    height: 200px;
+    width: 200px;
+}
+.cart-1 h2{
+    font-weight: 400;
+}
+.cart-1 h2 a{
+    text-decoration: none;
+    color: black;
+}
+.cart-1 .price{
+    color: #8d8e8d;
 }
 .sectiononecontainer{
     background-color: #F7F5F3;
@@ -274,6 +302,24 @@ ul li a{
     color: grey;
 
 }
+.secondcoloumcart-1 img{
+    float:right;
+    height: 500px;
+    width: 90%;
+}
+.secondcoloumcart-1 h2{
+    align-items: center;
+    text-align: center;
+}
+.secondcoloumcart-1 h2 a{
+    text-decoration: none;
+    color: black;
+}
+.secondcoloumcart-1 .price{
+    align-items: center;
+    text-align: center;
+    color: #8d8e8d;
+}
 .sectionthirdcontainer{
     padding: 40px 40px 40px;
     font-weight:300;
@@ -301,6 +347,50 @@ ul li a{
     color: white;
     font-weight: 250;
 }
+
+.sectionsevencontainer h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 45px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.sectionsevencontainer .rider img{
+    height: 300px;
+    width: 200px;
+}
+.rider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.scroll-image{
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    transition: left 0.5s ease;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .footer{
     display: flex;
     justify-content: space-between;
