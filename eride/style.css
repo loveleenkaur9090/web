@@ -210,16 +210,19 @@ ul li a{
 .cart-1{
     text-align: center;
     align-items: center;
-    /* border: 1px solid black; */
-    /* border-radius: 10%; */
     margin: 10px ;
 }
 .cart-1 img{
-    height: 200px;
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+    /* border-radius: 5%; */
+    height: 300px;
     width: 200px;
+    /* transition: linear 0.3s ease; */
+
 }
 .cart-1 h2{
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 20px;
 }
 .cart-1 h2 a{
     text-decoration: none;
@@ -227,6 +230,15 @@ ul li a{
 }
 .cart-1 .price{
     color: #8d8e8d;
+    display: grid;
+    text-align: center;
+}
+.cart-1 p{
+    font-weight: 300;
+}
+.bestbike:hover{
+    scale: 1.2;
+    border: 1px solid rgba(0, 0, 0, 0.759);
 }
 .sectiononecontainer{
     background-color: #F7F5F3;
