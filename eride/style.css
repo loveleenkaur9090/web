@@ -5,25 +5,26 @@
     box-sizing: border-box;
     font-family:"Poppins", sans-serif;
 }
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
 .header{
     display:flex;
     align-items: center;
     background-color: white;
     margin: 20px 30px 30px;  
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 .logo img {
     height: 37px;
     width: 152px;
 }
-.menu{
-    /* padding-left: 160px; */
-    align-items: center;
-}
 ul li{
-    
+    /* display: flex; */
     list-style: none;
     float: left;
     position: relative;
@@ -35,7 +36,7 @@ ul li a{
     text-decoration: none;
     color: #1BBE2C;
     font-weight: 500;
-    display: block;
+    /* display: block; */
 }
 .menu a:hover{
     color: black;
@@ -167,6 +168,7 @@ ul li a{
    height: 100%;
    width: 100%;
    padding:0px 30px 0px 30px ;
+   overflow: hidden;
 }
 .cta a img{
     height: 10%;
@@ -421,7 +423,6 @@ ul li a{
 }
 .footercolumthree a{
     display: block;
-    display: block;
     text-decoration: none;
     color: white;
 }
@@ -441,28 +442,26 @@ ul li a{
 
 
 
-.nav-toggle{
+.menu-icon{
     display: none;
     color: #1BBE2C;
 }
 
 /* responsive */
+
 @media screen  and (max-width:991px){
-    .nav-toggle{
-        display: flex;
+    nav ul li a{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        overflow: hidden; 
+        gap: 0;
+    }
+    .menu-icon{
+        display: block;
         margin-right: 20px;
-    }
-    /* .logo{
-       display: none;
-    } */
-    nav ul li{
-        display: none;
-    }
-    .dropdown{
-        display: none;
-    }
-    .leftmenu{
-        display: none;
     }
     .bestselligscooters h1{
         font-size: 20px;
@@ -481,10 +480,9 @@ ul li a{
     .bestsellingscootercart {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        height: 50%;
-        width: 50%;
-        /* margin: 10px;   */
-    }
+        height: 100%;
+        width: 100%;
+        }
     .firstcoloum h1{
         font-size: 20px;
         text-align: center;
@@ -575,6 +573,36 @@ ul li a{
         padding-top: 30px;
         font-size: 25px;
    
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px 20px;
+        font-size: 12px;
+    }
+    .footercolumthree{
+        padding-left: 10px;
+    }
+    .socialicon a img{
+        height: 16px;
+        width: 16px;
+        margin: 3px;
+    }
+    .autor p{
+        font-size: 13px;
+    }
+    .cta img{
+        height: 80%;
+        width: 90%;
+        padding:0px 0px 0px 30px ;
+        overflow: hidden;
+     }
+     .cta a img{
+        height: 6%;
+        width:6%;
+        background-color: white; /* Your desired background color */
+        padding: 0px;
+    
     }
 
 }

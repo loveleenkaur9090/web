@@ -13,7 +13,7 @@
         </div>
         <div> 
             <nav>
-                <ul class="menu">
+                <ul class="menu" id="menulist">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="#">Electric Scooter</a></li>
                     <li><a href="#">Car</a></li>
@@ -67,8 +67,8 @@
              </select>
         </div>
     </div>
-    <a href="#" class="nav-toggle hover-link">
-        <i class="fa-solid fa-bars"></i>
+    <a  class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="togglemenu"></i>
     </a>
 </div>
     <div class="cta">
@@ -231,6 +231,17 @@
         <a href="https://www.salidzini.lv/"><img src="kurpirkt120.gif" alt="pic2"></a>  
         </div>
     </div>
+    <script>
+        let menulist=document.getElementById("menulist")
+        menulist.style.maxHeight="0px";
+        function togglemenu(){
+        if(menulist.style.maxHeight =="0px") {
+           menulist.style.maxHeight="500px";
+        }else{
+        menulist.style.maxHeight="0px";
+        }
+    }
+    </script>
 <script src="javascript.js"></script>
 <script src="terms.js"></script>
 
