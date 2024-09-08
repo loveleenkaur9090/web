@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .imgSlider{
+            width: 100%;
+            height: 500px;
+            align-items: center;
+            background-image: url('imgbar/pexels-darrel-und-217939-1242286.jpg');
+            background-size: cover;
+            overflow: hidden;
+            animation: changeImage 20s linear alternate;
+        }
+        @keyframes changeImage{
+            0%{
+                background-image:url('imgbar/pexels-darrel-und-217939-1242286.jpg');
+            }
+            25%{
+                background-image:url('imgbar/pexels-karoldach-409696.jpg');
+            }
+            50%{
+                background-image:url('imgbar/pexels-moose-photos-170195-1037994.jpg');
+            }
+            75%{
+                background-image:url('imgbar/pexels-thepaintedsquare-583850.jpg');
+            }
+            100%{
+                background-image:url('imgbar/pexels-darrel-und-217939-1242286.jpg');
+            }
+        }
+    </style>
+</body>
+<div class="imgSlider">
+
+</div>
+
+</html>
