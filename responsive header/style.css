@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:sans-serif;
+}
+header{
+position: relative;
+width: 100%;
+height: 90px;
+background-color: red;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.brand{
+  display: flex;
+  align-items: center; 
+  height: 100%; 
+  padding: 4%;
+  width: 20%;
+}
+.brand img{
+    margin-left: 5%;
+}
+.navbar{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul {
+    width: 70%;
+    padding-left:30px ;
+}
+ul li {
+    margin-left: 10%;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 1%;
+    text-align: center;
+    align-items: center;
+}
+ul li a:hover{
+    /* background-color: white; */
+    color: black;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ .menubutton{
+    margin-right: 5%;
+}
+.menubutton button{
+    font-size: 15px;
+    cursor: pointer;
+    border:2px solid black;
+    background-color:rgb(255, 221, 0);
+    padding:10px 30px 10px 30px;
+}
+.menubutton button:hover{
+    background-color: white;
+    color: black;
+} 
+@media (max-width:425px) {
+    .navbar{
+        position: absolute;
+        width: 190px;
+        height: 100%;
+        /* background-color: yellow; */
+        padding: 5%;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left:25%;
+    }
+    ul {
+        height: 15vh;
+        width: 50vw;
+    }
+    ul li {
+        position: relative;
+        display: inline-flex;
+        list-style: none;
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+        align-items: center;
+        margin-top: 15px;
+        text-wrap: 200;
+    }
+    .brand img{
+        position: absolute;
+        left: 0;
+        height: 50px;
+        width: 160px;
+    }
+
+    .menubutton {
+        display: none;
+    }
+}
