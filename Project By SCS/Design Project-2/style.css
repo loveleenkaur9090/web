@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#top{
+    width: 100%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1477132394330-d2376dc4c091?q=80&w=1611&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-color: red; */
+    background-position: center;
+    background-size: cover;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.07);
+}
+#text{
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 55%;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+#text h1{
+    font-size: 6vw;
+    color: white;
+    font-weight: 400;
+}
+#textright{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#textright p{
+    color: white;
+    font-size: 15px;
+    width: 40%;
+}
+#textright h3{
+    color: white;
+}
+#icon{
+    display: flex;
+    justify-content: space-between;
+}
+#icon i{
+    color: white;
+    font-size: 25px;
+}
+#bottom{
+    width:100%;
+    height: 40%;
+    background-color: pink;
+    display: flex;
+}
+#bone{
+    padding: 20px;
+    width: 25%;
+    height: 100%;
+    background-color: white; 
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#btwo{
+    width: 25%;
+    height: 100%;
+    color: black;
+    background-image:url(https://images.unsplash.com/photo-1727376929091-61b4431f1e4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDc3fHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+}
+#bthree{
+    width: 20%;
+    height: 100%;
+}
+.bthreetop{
+    width: 100%;
+    height:50%;
+    background-color: rgb(254, 182, 57);
+}
+.bthreebottom{
+    width: 100%;
+    height:50%;
+    background-image:url(https://images.unsplash.com/photo-1727100786572-fddbb7b23b39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D);
+    background-size: cover;
+    background-position: center;
+}
+#bfour{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(22, 21, 21); 
+    color: white;
+    padding: 15px;
+}
+#notf{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+#notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(https://media.istockphoto.com/id/656381248/photo/beautiful-white-fluffy-bird-feather-lies-on-a-black-isolated-background.webp?a=1&s=612x612&w=0&k=20&c=ds-vaRJfZRWw7TYhi9GsnRdtEL5v6QdYKUdZjUwdkUM=);
+    background-size: cover;
+}
+#notf p{
+    font-size: 14px;
+    width:80%;
+}
+#notf-2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+#notf-2 #photo2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1609896454820-cdf9ab0524f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+#notf-2 p{
+    font-size: 14px;
+    width:80%;
+}

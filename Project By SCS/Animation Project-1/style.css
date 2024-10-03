@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: lightpink;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* jo property me rakhna chahta hu */
+    animation-fill-mode:forwards;
+    animation-iteration-count: 2;
+    animation-timing-function:ease-in;
+    /* cubic bizer website se bnaana aur uski properties ki esme add karna hota hain */
+    animation-direction: alternate;   
+
+}  
+/* intial state hamara animation kese dekhta tha aur final state ki hamara animtaion kese dekhega */
+/* @keyframes move {
+    from{
+        left: 0;
+        background-color: lightgreen;
+    }
+    to{
+        left: 60%;
+    }
+} */
+
+@keyframes move {
+    0%{
+        left: 0;
+        background-color: lightblue;
+        top: 0;
+        rotate: 0deg;
+    }
+    50%{
+        left: 75%;
+        background-color: lightgreen;
+        top: 0;
+        rotate: 360deg;
+        background-image: url('pexels-photo-2379004.jpeg');
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    100%{
+        left: 75%;
+        background-color: aqua;
+        top:50%;
+        rotate: 360deg;
+        background-image: url('pexels-photo-2379004.jpeg');
+        border-radius: 50%;
+        border: 2px solid black;
+        
+    }
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+h1{
+    font-family: monospace;
+    font-size: 150px;
+    font-weight: 900;
+    position: relative;
+}
+/* h1::after{
+    content:"<3";
+}
+h1::before{
+    content:"(:)";
+} */
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    background-color: red;
+    left: 0;
+    /* animation-name: lineanime;
+    animation-duration: 2s; */
+    display: none;
+}
+h1:hover::after{
+    animation-name: lineanime;
+    animation-duration: 1s;
+    display: block;
+}
+@keyframes lineanime{
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left:100%;
+    }
+}
