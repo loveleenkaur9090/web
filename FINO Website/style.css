@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#menu-bar{
+    height: 100px;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo {
+    margin-left: 15px;
+}
+#logo h1{
+    font-weight: 750;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+#links{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 109px;
+}
+#links h3{
+    padding:0 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+#button{
+    /* margin-right: 10px; */
+    justify-content: space-between;
+}
+#button #register{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 35px;
+}
+#button #login{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 10px 18px;
+}
+#hero{
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#hero h1{
+    padding-top:50px;
+    font-size: 65px;
+    /* letter-spacing: -2px; */
+}
+#hero p{
+    line-height: 20px;
+    position: relative;
+    font-weight: 550;
+    color: rgb(150, 149, 149);
+    padding: 20px 0;
+    /* font-size: 20px; */
+}
+#hero form{
+    border-radius:5px;
+    margin-top: 15px;
+    width:35.5%;
+    left: 32%;
+    height: 50px;
+    padding: 10px 20px;
+    position: absolute;
+    background-color: rgba(222, 222, 222, 0.547);
+}
+#hero form>input{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border: none;
+    background-color:transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+#hero form>button{
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 370px;
+    top: 5px;
+
+}
+#cta{
+    height: 500px;
+    width: 100%;
+    background-color: red;
+}
+#cta-back-img{
+    width:210vh;
+    height: 450px;
+    padding-top: 20px;
+    margin: 20px;
+    position: absolute;
+    background-color: yellow;
+}
+
+#inside-img{
+    height: 400px;
+    margin: 25px;
+    background-color: pink;
+}
+#managment{
+    width: 100%;
+    background-color: blue;
+}
+#managment>h1{
+    text-align:center;
+    padding-top: 90px;
+    font-size: 40px;
+}
+#RIB {
+    height: 500px;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+#RIB #Rtt{
+    height: 250px;
+    width: 33%;
+    background-color: blueviolet;
+}
+#RIB #Im{
+    height: 250px;
+    width: 33%;
+    background-color: rgb(43, 217, 226);
+}
+#RIB #B{
+    height: 250px;
+    width: 33%;
+    background-color: rgb(43, 226, 67);
+}
+#Rtt{
+    padding: 20px;
+}
+#Rtt>h1{
+    font-size: 25px;
+}
+#icon1{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(14, 255, 6);
+}
+#Im{
+    padding: 20px;
+}
+#Im>h1{
+    font-size: 25px;
+}
+#icon2{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(14, 255, 6);
+}
+#B{
+    padding: 20px;
+}
+#B>h1{
+    font-size: 25px;
+}
+#icon3{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(14, 255, 6);
+}
+#imgAndContent{
+    height: 500px;
+    width: 100%;
+    background-color: red;
+}
+.imgdivone{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    left: 9%;
+    margin-top: -1%;
+    border-radius: 10%;
+    background-color: royalblue;
+}
+#img{
+    margin: 50px;
+}
+#img img{
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.imgdivtwo{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    margin-top: 9%;
+    left: -2%;
+    border-radius: 10%;
+    background-color: royalblue;
+}

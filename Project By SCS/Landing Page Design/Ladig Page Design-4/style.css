@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat";
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+#nav{
+    height: 110px;
+    width:100%;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    justify-content: space-between;
+}
+#nav img{
+    height: 37px;
+    margin-right: 150px;
+}
+#nav-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-prt1 h4{
+    margin-right: 60px;
+    font-size: 19px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+#nav-prt2 i{
+    margin-right: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 10px;
+}
+#content{
+    width: 100%;
+    height:calc(100% - 110px);
+    position: relative;
+    display: flex;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    padding: 50px 120px;
+}
+#left h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* color: #404040; */
+}
+#left h1{
+    margin-bottom: 30px;
+    font-size:50px;
+    line-height:50px;
+    text-transform: uppercase;
+    /* color: #404040; */
+}
+#left button{
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    padding:12px 24px;
+    
+    background-color: black;
+    text-transform: uppercase;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    margin-bottom: 20px;
+    /* background-color: rgb(102, 255, 0); */
+    position: relative;
+    padding: 80px ;
+    white-space:nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 390px;
+    width: 250px;
+    background-color: white;
+    position: relative;
+    margin-right: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0,0.3);
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    /* animation-iteration-count:infinite ; */
+}
+@keyframes move {
+    10%{
+        left: 100%;
+    }
+   
+    100%{
+        left:-100%;
+    }
+}
+.elem img{
+    /* margin-top: 50px;  */
+    position: absolute;
+    /* height: 10%; */
+    width: 100%;
+    object-fit: cover;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 8px 15px;
+    border-radius: 6px; 
+    /* font-weight: 500;  */
+    font-size: 15px;  
+}
+.elem h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 6px; 
+    font-weight: 500; 
+    font-size: 13px; 
+}

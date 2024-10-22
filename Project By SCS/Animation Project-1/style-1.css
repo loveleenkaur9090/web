@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* #box{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(4, 4, 4);
+    background-color: rgb(47, 255, 5);
+    position: absolute;
+    animation-name: paul;
+    animation-duration: 1s;
+    animation-delay:0.1;
+} */
+h1{
+    height: 50px;
+    width: 250px;
+    background-color: red;
+    font-family: monospace;
+    font-size: 50px;
+    color: rgb(62, 255, 4);
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay:1;
+    animation-timing-function:ease-in;
+    /* animation-iteration-count: infinite; */
+}
+/* @keyframes move{
+    0%{
+        left: 0;
+        top: 10%;
+    }
+    1%{
+        left:0;
+        top: 20%;
+    }
+    2%{
+        left:0;
+        top: 30%;
+    }
+    3%{
+        left:0;
+        top: 40%;
+    }
+    4%{
+        left:0;
+        top: 50%; 
+    }
+    5%{
+        left:0;
+        top: 60%;
+    }
+    6%{
+        left:0;
+        top: 70%; 
+    }
+    7%{
+        left:0;
+        top: 73%; 
+    }
+    
+} */
+
+@keyframes move{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 0;
+        top: 50%;
+        rotate: 360deg;
+        color: pink;
+
+    }
+    100%{
+        left: 10%;
+        top: 40%;
+    }
+} 

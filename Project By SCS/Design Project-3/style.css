@@ -155,7 +155,7 @@ html,body{
     width: 200px;
     bottom: -5;
     left: 37%;
-    background-image: url();
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
 }
 #about-us{
     display: flex;
@@ -177,11 +177,18 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(icons8-arrow-96.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
 }
-#about-us img{
-    rotate: 90deg;
-    height: 50px;
-}
+
+/* #greendiv img{
+    rotate: 2deg;
+    height: 70px;
+    size: 20px;
+} */
 #page3{
     height: 100%;
     width: 100px;
