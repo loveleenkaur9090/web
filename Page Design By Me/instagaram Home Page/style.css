@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height:600px;
+    width: 100%;
+    background-color: red;
+}
+#ImgandLoginForm{
+    height: 550px;
+    margin: 0 50px;
+    background-color: yellow;
+    display: flex;
+}
+#img{
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+}
+#form{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(226, 255, 192);
+}
+#loginBar{
+    height: 400px;
+    width: 60%;
+    border: 1px solid black;
+}
+#loginBar form{
+    display: grid;
+    justify-content: flex-start;
+}
+#loginBar form input{
+    padding: 10px 50px;
+    border: 0.1px solid gainsboro;
+    background-color: rgb(233 233 233 / 88%);
+}
