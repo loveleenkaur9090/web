@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(162, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 420px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid #2dff0300;
+    position: relative;
+
+}
+#storiyan{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 20px 0  0 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+#story{
+    height: 80px;
+    width: 80px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+    
+}
+#story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#fullscreen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    display: none;
+}
+#text h1{
+    position: absolute;
+    top: 10px;
+    left: 33%;
+    color: #43fd05;
+    font-weight: 700;
+    font-size: 4vw;
+}
